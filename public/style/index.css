@@ -1,0 +1,99 @@
+/** Page Content **/
+#slogan{
+  font-size: 60px;;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  text-align: center;
+}
+
+#ad{
+  display: flex;
+  height: 450px;
+  width: 100%;
+  padding: 40px;
+}
+
+#beige-container{
+  position: relative;
+  top: 100px;
+  bottom: 0;
+  padding: 40px;
+  width: 100%;
+  background-color: #e3dccf;
+}
+
+#brown-container{
+  position: relative;
+  z-index: 100;
+  background-color: #5d6b4e;
+  overflow: hidden;
+  height: 470px; 
+  width: 2500px;
+  color: white;
+  font: inherit;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#brown-container p{
+  padding: 40px;
+}
+
+#ad-button {
+  margin-top: 70px;
+  text-align: center;
+  width: 300px;
+  padding: 20px 16px;
+  font-family: "Crimson Text", serif;
+  font-size: 16px;
+  font-weight: normal ;
+  text-transform: uppercase ;
+  letter-spacing: 2.5px;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+#ad-button:hover {
+  background-color: #5d6b4e;
+  box-shadow: 0px 9px 10px  rgba(82,156,72,0.75);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+#ad-button:active {
+  transform: translateY(-1px);
+}
+
+a{
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+/** Page Content **/
+
+
+@media screen and (max-width: 1280px) {
+  #brown-container{
+    background-color: #e3dccf;
+    height: 370px;
+    position: relative;
+    top: 100px;
+    bottom: 0;
+    padding: 40px;
+  }
+  #brown-container p{
+    display: none;
+  }
+}
+

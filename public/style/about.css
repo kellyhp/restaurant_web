@@ -1,0 +1,42 @@
+  /** About **/
+#about{
+    padding-top: 50px;
+  }
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 600px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .row{
+    justify-content: center !important;
+    padding: 40px;
+    width: 100% !important;
+  }
+  /** About **/
+
+  #break{
+    height: 150px;
+    width: 100%;
+  }
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1280px) {
+    .column {
+      width: 100%;
+    }
+    .row{
+      height: 1100px;
+    }
+  }
+  
+  /* for mobile view -> we use min-width to convert to desktop view EX: 780px*/

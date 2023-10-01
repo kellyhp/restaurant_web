@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About Teatime's Harvest</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style/menu.css">
+<link rel="stylesheet" type="text/css" href="style/shared.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="script/nav.js" defer></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<!--Navigation bar-->
+<nav id="home" class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/" style="font-weight: bold; font-size: 24px; font-family: 'Crimson Text'">
+        Teatime's Harvest</a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar" style="font-weight: normal; font-size: 16px; font-family: 'Crimson Text'">
+      <ul class="nav navbar-nav">
+        <li class="nbtn"><a href="/">Home</a></li>
+        <li class="nbtn" ><a href="/about">About</span></a></li>
+        <li class="nbtn"><a href="/menu">Menu</a></li>
+        <li class="nbtn"><a href="/contact">Catering</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Header -->
+<div id="header-container">
+    <div id="header-textc"> 
+      <h1> Our Selections </h1>
+    </div>
+  </div>
+<!-- Page content -->
+   
+
+  <div id="menu">
+    <h1>Our Menu</h1><br>
+  <div class="tab" style="font-weight: bold; font-size: 24px; font-family: 'Crimson Text'">
+    <button class="tablinks" onclick="openMenu(event, 'Appetizer')" id="defaultOpen">Appetizer</button>
+    <button class="tablinks" onclick="openMenu(event, 'Entree')">Entree</button>
+    <button class="tablinks" onclick="openMenu(event, 'Drinks')">Drinks</button>
+  </div>
+  
+  <div id="Appetizer" class="tabcontent">
+    <h3>Advocado Toast</h3>
+    <p>Whole-Grain Bread, Advocados, Cherry Tomatoes, Red Onion, Olive Oil, Salt & Pepper $7</p>
+    <h3>Fruit Parfait</h3>
+    <p>Greek Yogurt, Mixed Berries, Granola, Honey $5</p>
+    <h3>Mini Quiches(2)</h3>
+    <p>Pie Crust, Eggs, Milk, Cheese, Choice of Fillings(Spinach, Mushroom, Ham) $5</p>
+
+  </div>
+  
+  <div id="Entree" class="tabcontent">
+    <h3>Eggs Benedit</h3>
+    <p>English Muffin, Poaches Eggs, Smoked Salmon, Hollandaise Sauce, Chives $10</p>
+    <h3>Eggs Florentine</h3>
+    <p>Poached Eggs, Spinach, English Muffin, Hollandaise Sauce $9</p>
+    <h3>Classic French Toast</h3>
+    <p>Bread, Eggs, Milk, Cinnamon, Maple Syrup $6.50</p>
+    <h3>Spinach and Mushroom Quiche</h3>
+    <p>Pie Crust, Eggs, Spinach, Mushrooms, Gruyere Cheese, Cream, Salt & Pepper $9</p>
+  </div>
+  
+  <div id="Drinks" class="tabcontent">
+    <h3>Mimosa</h3>
+    <p>Champagne, Orange Juice $7</p>
+    <h3>Iced Coffee</h3>
+    <p>Freshly Brewed Coffee, Milk, Agave Sweetener $4</p>
+    <h3>Orange Juice</h3>
+    <p>Oranges $3</p>
+  </div> 
+  </div>
+  
+  <script>
+  function openMenu(evt, menuCat) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(menuCat).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  </script>
+
+
+  
+<!-- End page content -->
+<footer>
+  <div class="footer">
+  <div class="f-row">
+  <a href="#"><i class="fa fa-facebook"></i></a>
+  <a href="#"><i class="fa fa-instagram"></i></a>
+  <a href="#"><i class="fa fa-youtube"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  </div>
+  <div class="f-row">
+    <div class="f-column"> 
+      <h1> Our Location </h1>
+      <p>42nd Living St, 
+      </br>43043 New York, NY</p>
+    </div>
+    <div class="f-column"> 
+      <h1> Contact </h1>
+      <p>00553123-2323</p>
+      <p>teatimeharvest@example.com</p>
+    </div>
+  </div>
+  <p style="margin-top: 10px;"> Designed By: Kelly P <p></p>
+  </div>
+  </footer>
+</div>
+
+</body>
+</html>

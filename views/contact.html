@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Teatime's Harvest</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style/contact.css">
+<link rel="stylesheet" type="text/css" href="style/shared.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="script/nav.js" defer></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<!--Navigation bar-->
+<nav id="home" class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/" style="font-weight: bold; font-size: 24px; font-family: 'Crimson Text'">
+        Teatime's Harvest</a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar" style="font-weight: normal; font-size: 16px; font-family: 'Crimson Text'">
+      <ul class="nav navbar-nav">
+        <li class="nbtn"><a href="/">Home</a></li>
+        <li class="nbtn" ><a href="/about">About</span></a></li>
+        <li class="nbtn"><a href="/menu">Menu</a></li>
+        <li class="nbtn"><a href="/contact">Catering</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Header -->
+<div id="header-container">
+    <div id="header-textc"> 
+      <h1> Catering </h1>
+    </div>
+  </div>  
+
+<!-- Page content -->
+
+  <!-- Catering Section -->
+  <div id="reservation"class="container2">
+    <h1>Catering</h1><br>
+    <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy 
+      the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+      <p><b>42nd Living St, 43043 New York, NY</b></p>
+      <p>You can also contact us by phone 00553123-2323 or email teatimeharvest@example.com, or you can request a reservation here:</p>  
+    <form action="/action_page.php" method="POST">
+      <label for="fname"><h3> First Name</h3></label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name.." required/>
+  
+      <label for="lname"><h3> Last Name</h3></label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name.." required/>
+
+      <label for="email"><h3> Email</h3></label>
+      <input type="text" id="email" name="email" placeholder="Your email.." required/>
+      
+      <label for="time"><h3> Catering Time </h3></label>
+      <p><input type="datetime-local" placeholder="Date and time" required name="date" value="2023-11-16T10:00" required/></p>
+
+      <label for="party"><h3> Party Size</h3></label>
+      <p><input type="number" id="party" placeholder="10" min="10" required/></p>
+
+      <label for="subject"><h3>Write a message/special request</h3></label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+  
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  
+<!-- End page content -->
+<footer>
+  <div class="footer">
+  <div class="f-row">
+  <a href="#"><i class="fa fa-facebook"></i></a>
+  <a href="#"><i class="fa fa-instagram"></i></a>
+  <a href="#"><i class="fa fa-youtube"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  </div>
+  <div class="f-row">
+    <div class="f-column"> 
+      <h1> Our Location </h1>
+      <p>42nd Living St, 
+      </br>43043 New York, NY</p>
+    </div>
+    <div class="f-column"> 
+      <h1> Contact </h1>
+      <p>00553123-2323</p>
+      <p>teatimeharvest@example.com</p>
+    </div>
+  </div>
+  <p style="margin-top: 10px;"> Designed By: Kelly P <p></p>
+  </div>
+  </footer>
+</div>
+
+</body>
+</html>

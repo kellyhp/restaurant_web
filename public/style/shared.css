@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap');
+/** Font Styling **/
+p {
+  font-family: "Crimson Text", serif !important;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+h1{
+  font-family: "Crimson Text", serif !important;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h3{
+  font-family: "Crimson Text", serif !important;
+  font-size: 18px !important;
+}
+/** Font Styling **/
+  
+/** Navigation Bar **/
+.navbar-nav{
+  float:right !important;
+}
+
+#home {
+  background-color:#e3dccf;
+  border-bottom: none;
+}
+
+.navbar-brand{
+  color: black !important;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+  color: black !important;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+  color: #fff !important;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover{
+  background-color: black !important;
+  color: white !important;
+  transition: all 0.3s ease 0s;
+}
+/** Navigation Bar **/
+
+  /** Header **/
+  #header-container{
+    width: 100%;
+    height: 250px;
+    background-color: #536878;
+  }
+  
+
+  #header-textc h1{
+    display: flex;
+    /*this centers the text horizontally*/
+    justify-content: center;
+    /*this centers the text vertically*/
+    align-items: center;
+    color: black;
+    text-align: center !important;
+    height: 250px;
+    font-size: 48px;
+  }
+
+  /** Footer **/
+
+
+.footer{
+  background-color: #e3dccf;
+  padding:30px 0px;
+  text-align:center;
+  height:350px;
+}
+
+/* Create two equal columns that floats next to each other */
+.f-column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.f-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  
+  .footer .f-row{
+  width:100%;
+  margin:1% 0%;
+  padding:0.6% 0%;
+  color:black;
+  font-size:20px;
+  }
+  
+  .footer .f-row a{
+  text-decoration:none;
+  color:black;
+  transition: all 0.3s ease 0s;
+  }
+  
+  .footer .f-row a:hover{
+  color: #5d6b4e !important;;
+  }
+  
+  .footer .f-row ul{
+  width:100%;
+  }
+  
+  .footer .f-row ul li{
+  display:inline-block;
+  margin:0px 30px;
+  }
+  
+  .footer .f-row a i{
+  font-size:32px;
+  margin:0% 1%;
+  }
+  
+  @media (max-width:720px){
+  .footer{
+  text-align:left;
+  padding:5%;
+  }
+  .footer .f-row ul li{
+  display:block;
+  margin:10px 0px;
+  text-align:left;
+  }
+  .footer .f-row a i{
+  margin:0% 3%;
+  }
+
+  #slogan h1{
+    font-size: 30px;
+  }
+  }
+/** Footer **/
